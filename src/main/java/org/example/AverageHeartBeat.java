@@ -15,7 +15,6 @@ public class AverageHeartBeat {
         try {
             String baseUrl = "https://jsonmock.hackerrank.com/api/marathon?sex=" + sex;
             int page = 1, totalPages = 1, totalHeartRate = 0, count = 0;
-
             while (page <= totalPages) {
                 // Fetch paginated API response
                 String urlString = baseUrl + "&page=" + page;
@@ -40,7 +39,6 @@ public class AverageHeartBeat {
                 }
                 page++;
             }
-
             // Compute and return the average rounded down
             return (count == 0) ? 0 : (int) Math.floor((double) totalHeartRate / count);
 
