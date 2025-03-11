@@ -21,6 +21,7 @@ public class AverageHeartBeat {
                 String jsonResponse = getApiResponse(urlString);
 
                 // Parse JSON response using Gson
+                //dummy
                 JsonObject jsonObject = gson.fromJson(jsonResponse,
                         JsonObject.class);
                 totalPages = jsonObject.get("total_pages").getAsInt();
