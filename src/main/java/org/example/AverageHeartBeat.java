@@ -1,3 +1,5 @@
+package org.example;
+
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
@@ -27,6 +29,8 @@ public class AverageHeartBeat {
                 JsonArray data = jsonObject.getAsJsonArray("data");
 
                 // Filter and calculate average heartbeat
+                //dummy
+                //dumm1
                 for (int i = 0; i < data.size(); i++) {
                     JsonObject runner = data.get(i).getAsJsonObject();
                     if (runner.get("marathon_name").getAsString().equalsIgnoreCase(marathon)) {
