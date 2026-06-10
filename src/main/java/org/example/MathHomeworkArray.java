@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.*;
 
-public class MathHomework1 {
+public class MathHomeworkArray {
     public static int minNum(int threshold, int[] points) {
         int n = points.length;
 
